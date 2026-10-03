@@ -1,0 +1,10 @@
+# Gradle
+.gradle/
+build/
+# Database credentials - never commit real passwords
+src/main/resources/db.properties
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.class

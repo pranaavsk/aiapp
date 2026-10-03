@@ -1,0 +1,25 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding : 2rem;
+    background-color:  #f4f4f9;
+    color: #333;
+}
+header{
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+h1{
+    margin: 0;
+}
+#status
+{
+    margin-top: 1rem;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #e2e8f0;
+    display: inline-block;
+    font-weight: bold;
+}

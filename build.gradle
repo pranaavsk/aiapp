@@ -1,0 +1,24 @@
+plugins{
+    id 'java'
+}
+group ='com.aiapp'
+version='1.0-SNAPSHOT'
+
+java{
+    toolchain{
+        languageVersion=JavaLanguageVersion.of(25)
+    }
+}
+repositories{
+    mavenCentral()
+}   
+dependencies
+{
+    implementation 'com.mysql:mysql-connector-j:9.0.0'
+    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+test
+{
+    useJUnitPlatform()
+}
