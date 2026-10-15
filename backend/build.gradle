@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = "com.aiapp"
+version = "1.0-SNAPSHOT"
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+// Point Gradle to your main class
+application {
+    mainClass.set("com.aiapp.AppServer")
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("com.mysql:mysql-connector-j:9.0.0")
+    implementation("at.favre.lib:bcrypt:0.10.2")
+    testImplementation(platform("org.junit:junit-bom:5.10.2"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
